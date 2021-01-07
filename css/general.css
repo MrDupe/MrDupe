@@ -1,0 +1,81 @@
+﻿body {
+    background-color: #fafafa;
+    font-family: 'Roboto', serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar-home {
+    background-color: #f2f2f2 !important;
+    width: 99vw;
+    height: 10vh;
+}
+.nav-item {
+    color: #2d466c !important;
+    font-family: 'Roboto', serif !important;
+    font-weight: 600;
+    font-size: 1.3em;
+    position: relative;
+    margin-right: 2em;
+}
+
+.active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4.4em;
+    height: 3px;
+    background-color: #f90505;
+}
+
+
+
+#content {
+    background-color: #fafafa;
+    width: 100%;
+    min-height: 75vh;
+    color: #202020;
+}
+
+
+/*parallax styling*/
+#parallax-image{
+    height:88vh;
+    width: 99.1vw;
+}
+.parallax-window {
+    height: 100%;
+}
+.parallax-overlay {
+    text-align:center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 35em;
+    height: 8em;
+    background-color: #f2f2f2;
+    opacity: .85;
+}
+.parallax-overlay-text{
+    font-size: 2em;
+}
+
+/*footer Styling*/
+.custom-footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 15vh;
+}
+
+.social-links{
+    text-decoration: none;
+}
+.social-icons {
+    color: #202020;
+}
+.social-icons:hover{
+    color: #424242;
+}

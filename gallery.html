@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Duplessis Home Builders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <style>
+        #photos {
+            /* Prevent vertical gaps */
+            line-height: 0;
+            -webkit-column-count: 5;
+            -webkit-column-gap: 0px;
+            -moz-column-count: 5;
+            -moz-column-gap: 0px;
+            column-count: 5;
+            column-gap: 0px;
+        }
+
+            #photos img {
+                /* Just in case there are inline attributes */
+                width: 100% !important;
+                height: auto !important;
+                padding: .2em;
+            }
+            #photos img:hover {
+                opacity: .8;
+                border: 2px #000000;
+            }
+        @media (max-width: 1200px) {
+            #photos {
+                -moz-column-count: 4;
+                -webkit-column-count: 4;
+                column-count: 4;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #photos {
+                -moz-column-count: 3;
+                -webkit-column-count: 3;
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 800px) {
+            #photos {
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #photos {
+                -moz-column-count: 1;
+                -webkit-column-count: 1;
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav id="navbar-dup" class="navbar navbar-expand-lg navbar-light flex-nowrap">
+            <a class="navbar-brand" href="#">
+                <img id="duplessis_logo" src="Logos/Logo_small.png" alt="Duplessis HomeBuilders" />
+            </a>
+
+            <div class="collapse navbar-collapse w-100 justify-content-center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="https://mrdupe.github.io/mrdupe/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="https://mrdupe.github.io/mrdupe/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="https://mrdupe.github.io/mrdupe/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler mr-1" type="button" data-toggle="modal" data-target="#sidebarModal"
+                    aria-controls="sidebarModal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+
+        <!--************Nav Modal************-->
+        <div class="modal fade menu modal-right" id="sidebarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content h-100 w-100">
+                    <div class="modal-header" style="border: 0px;">
+                        <button type="button" class="close float-left" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-ltr" href="https://mrdupe.github.io/mrdupe/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-ltr" href="https://mrdupe.github.io/mrdupe/gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-ltr" href="https://mrdupe.github.io/mrdupe/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="content" style="padding-bottom: 10em;">
+        <div id="photos" class="container-fluid w-100 justify-content-center" style="padding-left: 0px; padding-right:0px;">
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-1.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-1_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-2.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-2_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-3.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-3_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-4.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-4_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-5.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-5_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-6.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-6_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-7.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-7_small.jpg"></a>
+
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-2.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-2_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-3.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-3_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-4.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-4_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-5.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-5_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-6.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-6_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-7.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-7_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-2.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-2_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-3.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-3_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-4.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-4_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-5.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-5_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-6.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-6_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-1.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-1_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-2.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-2_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-3.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-3_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-4.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-4_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-5.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-5_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-6.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-6_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-7.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-7_small.jpg"></a>
+            <a data-fancybox="gallery" href="https://mrdupe.github.io/mrdupe/photos/duplessis-7.jpg"><img src="https://mrdupe.github.io/mrdupe/photos/duplessis-7_small.jpg"></a>
+
+
+        </div>
+    </div>
+            
+    <footer class="custom-footer">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="my-3">
+                <a class="mx-3" href="https://www.facebook.com/pages/category/Construction-Company/Duplessis-Home-Builders-105356141426763/">
+                    <i class="fa fa-3x fa-facebook-f social-icons"></i>
+                </a>
+                <a class="mx-3" href="https://www.facebook.com/pages/category/Construction-Company/Duplessis-Home-Builders-105356141426763/">
+                    <i class="fa fa-3x fa-instagram social-icons"></i>
+                </a>
+                <a class="mx-3" href="https://www.facebook.com/pages/category/Construction-Company/Duplessis-Home-Builders-105356141426763/">
+                    <i class="fa fa-3x fa-pinterest-p social-icons"></i>
+                </a>
+                <a class="mx-3" href="https://www.facebook.com/pages/category/Construction-Company/Duplessis-Home-Builders-105356141426763/">
+                    <i class="fa fa-3x fa-twitter social-icons"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        function getMeta(url) {
+            $("<img/>", {
+                load: function () {
+                    return { height: this.height, width: this.width }
+                },
+                src: url
+            });
+        }
+        var initPhotoSwipeFromDOM = function (gallerySelector) {
+
+            // parse slide data (url, title, size ...) from DOM elements
+            // (children of gallerySelector)
+            var parseThumbnailElements = function (el) {
+                var thumbElements = el.childNodes,
+                    numNodes = thumbElements.length,
+                    items = [],
+                    figureEl,
+                    linkEl,
+                    size,
+                    item;
+
+                for (var i = 0; i < numNodes; i++) {
+
+                    figureEl = thumbElements[i]; // <figure> element
+
+                    // include only element nodes
+                    if (figureEl.nodeType !== 1) {
+                        continue;
+                    }
+
+                    linkEl = figureEl.children[0]; // <a> element
+
+                    size = linkEl.getAttribute('data-size').split('x');
+
+                    // create slide object
+                    item = {
+                        src: linkEl.getAttribute('href'),
+                        w: parseInt(size[0], 10),
+                        h: parseInt(size[1], 10)
+                    };
+
+
+
+                    if (figureEl.children.length > 1) {
+                        // <figcaption> content
+                        item.title = figureEl.children[1].innerHTML;
+                    }
+
+                    if (linkEl.children.length > 0) {
+                        // <img> thumbnail element, retrieving thumbnail url
+                        item.msrc = linkEl.children[0].getAttribute('src');
+                    }
+
+                    item.el = figureEl; // save link to element for getThumbBoundsFn
+                    items.push(item);
+                }
+
+                return items;
+            };
+
+            // find nearest parent element
+            var closest = function closest(el, fn) {
+                return el && (fn(el) ? el : closest(el.parentNode, fn));
+            };
+
+            // triggers when user clicks on thumbnail
+            var onThumbnailsClick = function (e) {
+                e = e || window.event;
+                e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+                var eTarget = e.target || e.srcElement;
+
+                // find root element of slide
+                var clickedListItem = closest(eTarget, function (el) {
+                    return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                });
+
+                if (!clickedListItem) {
+                    return;
+                }
+
+                // find index of clicked item by looping through all child nodes
+                // alternatively, you may define index via data- attribute
+                var clickedGallery = clickedListItem.parentNode,
+                    childNodes = clickedListItem.parentNode.childNodes,
+                    numChildNodes = childNodes.length,
+                    nodeIndex = 0,
+                    index;
+
+                for (var i = 0; i < numChildNodes; i++) {
+                    if (childNodes[i].nodeType !== 1) {
+                        continue;
+                    }
+
+                    if (childNodes[i] === clickedListItem) {
+                        index = nodeIndex;
+                        break;
+                    }
+                    nodeIndex++;
+                }
+
+
+
+                if (index >= 0) {
+                    // open PhotoSwipe if valid index found
+                    openPhotoSwipe(index, clickedGallery);
+                }
+                return false;
+            };
+
+            // parse picture index and gallery index from URL (#&pid=1&gid=2)
+            var photoswipeParseHash = function () {
+                var hash = window.location.hash.substring(1),
+                    params = {};
+
+                if (hash.length < 5) {
+                    return params;
+                }
+
+                var vars = hash.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    if (!vars[i]) {
+                        continue;
+                    }
+                    var pair = vars[i].split('=');
+                    if (pair.length < 2) {
+                        continue;
+                    }
+                    params[pair[0]] = pair[1];
+                }
+
+                if (params.gid) {
+                    params.gid = parseInt(params.gid, 10);
+                }
+
+                return params;
+            };
+
+            var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
+                var pswpElement = document.querySelectorAll('.pswp')[0],
+                    gallery,
+                    options,
+                    items;
+
+                items = parseThumbnailElements(galleryElement);
+
+                // define options (if needed)
+                options = {
+
+                    // define gallery index (for URL)
+                    galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                    getThumbBoundsFn: function (index) {
+                        // See Options -> getThumbBoundsFn section of documentation for more info
+                        var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                            pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                            rect = thumbnail.getBoundingClientRect();
+
+                        return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+                    }
+
+                };
+
+                // PhotoSwipe opened from URL
+                if (fromURL) {
+                    if (options.galleryPIDs) {
+                        // parse real index when custom PIDs are used
+                        // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                        for (var j = 0; j < items.length; j++) {
+                            if (items[j].pid == index) {
+                                options.index = j;
+                                break;
+                            }
+                        }
+                    } else {
+                        // in URL indexes start from 1
+                        options.index = parseInt(index, 10) - 1;
+                    }
+                } else {
+                    options.index = parseInt(index, 10);
+                }
+
+                // exit if index not found
+                if (isNaN(options.index)) {
+                    return;
+                }
+
+                if (disableAnimation) {
+                    options.showAnimationDuration = 0;
+                }
+
+                // Pass data to PhotoSwipe and initialize it
+                gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
+
+            // loop through all gallery elements and bind events
+            var galleryElements = document.querySelectorAll(gallerySelector);
+
+            for (var i = 0, l = galleryElements.length; i < l; i++) {
+                galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                galleryElements[i].onclick = onThumbnailsClick;
+            }
+
+            // Parse URL and open gallery if it contains #&pid=3&gid=1
+            var hashData = photoswipeParseHash();
+            if (hashData.pid && hashData.gid) {
+                openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+            }
+        };
+
+        // execute above function
+        initPhotoSwipeFromDOM('.my-gallery');
+    </script>
+</body>
+</html>

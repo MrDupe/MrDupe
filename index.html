@@ -6,6 +6,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="css/general.css">
+    <style>
+        #photos {
+            /* Prevent vertical gaps */
+            line-height: 0;
+            -webkit-column-count: 5;
+            -webkit-column-gap: 0px;
+            -moz-column-count: 5;
+            -moz-column-gap: 0px;
+            column-count: 5;
+            column-gap: 0px;
+        }
+
+            #photos img {
+                padding: .2em;
+            }
+
+
+        .bg-holder {
+            width: 100%;
+            height: 100%;
+        }
+
+            .bg-holder#parallax-image {
+                background-image: url('photos/duplessis-kitchen.jpg');
+            }
+        #parallax-image {
+            height: 88vh;
+            width: 99.1vw;
+        }
+    </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header>
@@ -13,7 +43,7 @@
             <a class="navbar-brand" href="#">
                 <img id="duplessis_logo" src="Logos/Logo_small.png" alt="Duplessis HomeBuilders" />
             </a>
-            
+
             <div class="collapse navbar-collapse w-100 justify-content-center" id="navbarToggler9">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
@@ -34,16 +64,16 @@
             </button>
         </nav>
     </header>
-    <content>
-        <div id="parallax-image" class="parallax-window" data-parallax="scroll" data-image-src="photos/duplessis-kitchen.jpg">
+
+        <div id="parallax-image" class="bg-holder" data-width="6048" data-height="4024">
             <div class="parallax-overlay">
                 <span class="parallax-overlay-text"><span style="color:#2d466c">Custom</span> Built Homes in Livingston Parish & <span style="color:#2d466c">Beyond</span></span>
             </div>
         </div>
-        <div id="content">
-            <h1> Some Content Here</h1>
-        </div>
-    </content>
+
+        <section>
+            Content that "slides" over the backgrounds
+        </section>
     <footer class="custom-footer">
         <div class="d-flex flex-row justify-content-center">
             <div class="my-3">
@@ -56,7 +86,7 @@
                 <a class="mx-3" href="https://www.facebook.com/pages/category/Construction-Company/Duplessis-Home-Builders-105356141426763/">
                     <i class="fa fa-3x fa-pinterest-p social-icons"></i>
                 </a>
-                <a  class="mx-3" href="https://www.facebook.com/pages/category/Construction-Company/Duplessis-Home-Builders-105356141426763/">
+                <a class="mx-3" href="https://www.facebook.com/pages/category/Construction-Company/Duplessis-Home-Builders-105356141426763/">
                     <i class="fa fa-3x fa-twitter social-icons"></i>
                 </a>
             </div>
@@ -66,27 +96,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.parallax-scroll.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".menu-icon").on("click", function () {
-                $("nav ul").toggleClass("showing");
-            });
+        $('.bg-holder').parallaxScroll({
+            friction: 0.5
         });
-
-        // Scrolling Effect
-
-        $(window).on("scroll", function () {
-            if ($(window).scrollTop()) {
-                $('nav').addClass('black');
-                $('nav').removeClass('grey');
-            }
-
-            else {
-                $('nav').removeClass('black');
-                $('nav').addClass('grey');
-            }
-        })
     </script>
 </body>
 </html>

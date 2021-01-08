@@ -1,0 +1,117 @@
+﻿body {
+    font-family: 'Roboto', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7fafc;
+}
+
+#duplessis_logo {
+    height: 51px;
+    width: 90px;
+}
+
+#navbar-dup {
+    background-color: #ffffff;
+    height: 8vh;
+    min-height: 4.5em;
+    border-bottom: 20px #000000;
+}
+@media only screen and (max-width: 768px) {
+    #navbar-dup {
+        height: 10vh;
+    }
+}
+.navbar-toggler{
+    border: 0;
+}
+.navbar-nav .nav-link:hover {
+    color: #000000;
+}
+
+.navbar .navbar-nav .nav-link {
+    position: relative;
+}
+.nav-link:hover {
+    opacity: .9;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: .1em;
+    content: "";
+    position: absolute;
+    background-color: #f90505;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+
+.nav-link {
+    color: #2d466c !important;
+    font-family: 'Roboto', serif !important;
+    font-size: 1.3em;
+    position: relative;
+    margin-right: 2em;
+    padding: 1.1em;
+}
+
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    border: 0px;
+}
+
+.modal.fade.modal-right .modal-dialog {
+    transform: translate(125%, 0px);
+}
+
+.modal.show.modal-right .modal-dialog {
+    transform: none;
+}
+
+
+
+#content {
+    background-color: #f7fafc;
+    width: 100%;
+    min-height: 75vh;
+    color: #494747;
+}
+
+
+
+/*footer Styling*/
+.custom-footer {
+    width: 100%;
+    background-color: #2d466c;
+    height: 15vh;
+}
+
+.social-links{
+    text-decoration: none;
+}
+.social-icons {
+    color: #f5f8fa;
+}
+.social-icons:hover{
+    color: white;
+}
+
+
+
+
+
